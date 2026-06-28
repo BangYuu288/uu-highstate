@@ -93,10 +93,61 @@ table{
     border-spacing:0;          /* Menghilangkan rongga */
 }
 
-th,td{
+th,
+td{
     padding:12px;
     border-bottom:1px solid #ddd;
     white-space:nowrap;
+    vertical-align:middle;
+}
+
+/* Header semua kolom di tengah */
+th{
+    background:#3e7bff;
+    color:#fff;
+    text-align:center;
+}
+
+/* Kolom Pasal */
+th:nth-child(1),
+td:nth-child(1){
+    text-align:center;
+}
+
+/* Kolom Deskripsi */
+th:nth-child(2){
+    text-align:center;
+}
+
+td:nth-child(2){
+    text-align:left;
+    padding-left:18px;
+}
+
+/* Kolom Denda */
+th:nth-child(3),
+td:nth-child(3){
+    text-align:center;
+}
+
+/* Kolom Masa Tahanan */
+th:nth-child(4),
+td:nth-child(4){
+    text-align:center;
+}
+
+/* Kolom Masa Impound */
+th:nth-child(5),
+td:nth-child(5){
+    text-align:center;
+}
+
+/* Kolom deskripsi bisa turun baris */
+td:nth-child(2){
+    white-space:normal;
+    word-break:break-word;
+    text-align:left;
+    padding-left:18px;
 }
 
 th{
